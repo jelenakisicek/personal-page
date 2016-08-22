@@ -43,6 +43,11 @@
     font-size: 17px;
 }
 
+.menu-item:hover,
+.logo:hover{
+	text-decoration: underline;
+}
+
 .menu-item a, /*  this is an individual button aka link to new content */
 .logo a{ 
     color: #F44336;
@@ -75,14 +80,28 @@
     margin: 0 auto;
     color: #F44336;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .content-box{
-	width: 32%;
-	float: left;
-	color: #757575;
-	outline: 1px solid #d0d0d0;
-	text-align: center;
+    width: calc(32% - 3px);
+    /* float: left; */
+    color: #757575;
+    outline: 1px solid #d0d0d0;
+    text-align: center;
+    margin-bottom: 25px;
+    min-height: 250px;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.content-box:hover{
+	outline-color: #F44336;
+}
+
+.content-box:hover .headline{
+	text-decoration: underline;
 }
 
 .left{
@@ -113,7 +132,7 @@
     line-height: 18px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 600px) {
     .header-items-wrapper{  /*   containes logo(jelena kisicek) and menu navigation container   */
     	width: 95%;
 	}
@@ -139,6 +158,15 @@
     .content-box{
     	width: 100%;
     	margin-bottom: 25px;
+    }
+
+    .logo, 
+    .menu-item{
+    	font-size: 40px;
+    }
+
+    .menu-item{
+    	margin-left: 60px;
     }
 }
 
