@@ -96,11 +96,11 @@
     text-decoration: none;
 }
 
-.content-box:hover{
+a.content-box:hover{
 	outline-color: #F44336;
 }
 
-.content-box:hover .headline{
+a.content-box:hover .headline{
 	text-decoration: underline;
 }
 
@@ -132,10 +132,45 @@
     line-height: 18px;
 }
 
+.news a{
+    color: #F44336;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+hr{
+    border: 1px solid #F5F5F5;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.cv-download{
+    background-color: #F44336;
+    color: #FAFAFA;
+    text-align: center;
+    font-size: 30px; 
+    font-weight: bold;
+    line-height: 250px;
+}
+
+.cv-download:hover{
+    text-decoration: underline;
+}
+
+
 @media only screen and (max-device-width: 600px) {
     .header-items-wrapper{  /*   containes logo(jelena kisicek) and menu navigation container   */
     	width: 95%;
 	}
+
+    .logo, 
+    .menu-item{
+        font-size: 45px;
+    }
+
+    .menu-item{
+        margin-left: 60px;
+    }
 
 	.title{
 		width: 95%;
@@ -146,6 +181,11 @@
     	width: 95%;
     }
 
+   .content-box{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
     .middle{
     	margin-left: 0;
     	margin-right: 0;
@@ -153,20 +193,13 @@
 
 	.headline{
 		margin-top: 18px;
+        font-size: 40px;
 	}
 
-    .content-box{
-    	width: 100%;
-    	margin-bottom: 25px;
-    }
-
-    .logo, 
-    .menu-item{
-    	font-size: 40px;
-    }
-
-    .menu-item{
-    	margin-left: 60px;
+    .news{
+        font-size: 35px;
     }
 }
+
+
 
