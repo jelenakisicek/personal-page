@@ -64,7 +64,6 @@
 
 .title{
 	width: 70%;
-	min-height: 300px;
 	margin: 0 auto;
 	background-color: #F44336;
 	color: #FAFAFA;
@@ -72,6 +71,14 @@
     line-height: 300px;
     text-align: center;
     font-weight: bold;
+}
+
+.title img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* width: 20%; */
+    height: 200px;
+    border-radius: 50%;
 }
 
 .content{
@@ -84,8 +91,7 @@
 }
 
 .content-box{
-    width: calc(32% - 3px);
-    /* float: left; */
+    width: calc(32% - 23px); /* 20px zbog paddinga, 3 px zbog display in line block */
     color: #757575;
     outline: 1px solid #d0d0d0;
     text-align: center;
@@ -94,6 +100,8 @@
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a.content-box:hover{
@@ -138,8 +146,17 @@ a.content-box:hover .headline{
     text-decoration: none;
 }
 
+.news a:hover{
+    text-decoration: underline;
+}
+
+.news.contact{
+    /*padding-top: 25px;*/
+    line-height: 25px;
+}
+
 hr{
-    border: 1px solid #F5F5F5;
+    border: 1px solid #E0E0E0;
     margin-top: 9px;
     margin-bottom: 9px;
 }
@@ -182,8 +199,10 @@ hr{
     }
 
    .content-box{
-        width: 100%;
+        width: calc(100% - 83px); /* 80 px ide zbog paddinga, 3 px ide zbog display in line block*/
         margin-bottom: 25px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .middle{
@@ -196,9 +215,19 @@ hr{
         font-size: 40px;
 	}
 
-    .news{
-        font-size: 33px;
-        line-height: 35px;
+    .news, 
+    .news.contact{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    hr{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+
+    .cv-download{
+        font-size: 50px; 
     }
 }
 
